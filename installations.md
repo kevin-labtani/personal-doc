@@ -66,6 +66,32 @@ install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 1. `ctrl + /` to add a comment, select text and then do `ctrl + /` to comment out a block, do it again to undo the comment
 1. `ctrl + shit + v` to pen a live preview for a .md file
 
+## Git and Github
+
+### Installing Git
+
+1. update the packages  
+   `sudo apt-get update`  
+   `sudo apt-get upgrade`
+2. install git  
+   `sudo apt-get install git`
+
+### Configuring Git
+
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --global credential.helper 'cache --timeout=3600'
+git config --global push.default current
+```
+
+last one get rid of the need to do `git push --set-upstream`. After this, `git push -u` push current branch to a remote branch of the same name.
+
+[Add a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)  
+[Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
+
+Then move on to [Using Git](/git.md)
+
 ## Terminal ([Source](https://wesbos.com/command-line-video-tutorials/))
 
 `ctrl + shift + t` to start the terminal  
@@ -91,19 +117,15 @@ install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 | `mv a.txt b.txt`          | to rename _a.txt_ to _b.txt_                            |
 | `clear`                   | to clear the terminal window                            |
 
-### Install ZSH and Oh My Zsh
+### Installing ZSH and Oh My Zsh
 
 Z-shell is one of the most popular shell  
 [Oh My Zsh](https://ohmyz.sh/) is a framework buit on top of ZSH
 
-1. Update the packages  
-   `sudo apt-get update`  
-   `sudo apt-get upgrade`
 1. Install prerequisites  
    `sudo apt install zsh`  
    `sudo apt-get install powerline fonts-powerline`  
-   `echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699".` to see if your font is compatible  
-   also needs git, see next section
+   `echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699".` to see if your font is compatible
 1. Install oh-my-zsh  
    `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`  
    It should prompt you to change the default shell to oh-my-zsh
