@@ -44,17 +44,17 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 
 1. Turn Word Wrap on
 1. (optional) Change tab size to 2 spaces
-1. Install Solarized Color Theme extension
-1. Install Live Server extension  
+1. Install **Solarized Color Theme** extension
+1. Install **Live Server extension**  
    open a html file and then right-click and choose _open with live server_
-1. Install HTML CSS Support for Class and Id attribute completion
-1. Install Auto Rename Tag for auto renaming of the paired tag when you rename one of them
-1. Install Prettier - Code formatter  
+1. Install **HTML CSS Support** for Class and Id attribute completion
+1. Install **Auto Rename Tag** for auto renaming of the paired tag when you rename one of them
+1. Install **Prettier - Code formatter**  
    change settings > _format on save_ to enable  
    search _prettier_ in settings to change the settings for the code formatter
-1. Install indent-rainbow for easier to see indentations
-1. Install Bracket Pair Colorizer 2 for colorized brackets pair
-1. Install Code Spell Checker to help catch common spelling errors in code
+1. Install **indent-rainbow** for easier to see indentations
+1. Install **Bracket Pair Colorizer 2** for colorized brackets pair
+1. Install **Code Spell Checker** to help catch common spelling errors in code nb: check for English
 
 ### Basic commands
 
@@ -136,7 +136,7 @@ Z-shell is one of the most popular shell
 You can change the colors and font through the terminal configuration  
 pick Solarized dark
 
-### Customize oh my zsh theme and prompt
+### Customize Oh My Zsh theme and prompt
 
 Check out Oh my zsh [github](https://github.com/robbyrussell/oh-my-zsh) to see existing themes  
 `code ~/.zshrc` to edit, then change `ZSH_THEME` env variable to the chosen theme, eg. [`ZSH_THEME="agnoster"`](https://github.com/agnoster/agnoster-zsh-theme)  
@@ -144,7 +144,7 @@ restart the terminal to apply the theme
 
 ### Zsh basic features
 
-1. Use lowercase even if dir or file name is uppercase, it's smart enough to change
+1. Able to use lowercase even if dir or file name is uppercase, it's smart enough to change
 1. `cd + space + tab` will open a list of all directories (with already escaped spaces), `tab` again and you can navigate through the list with arrow keys
 1. Use `~` to go home, or `..` to go up a level without having to type `cd`
 1. `ctrl` and click a link will take you to it
