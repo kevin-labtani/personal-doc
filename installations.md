@@ -1,4 +1,4 @@
-# Installing Your Development Environment
+# Install Your Development Environment (and Learn Basic Commands)
 
 ## Operating System ([source](https://www.theodinproject.com/courses/web-development-101/lessons/prerequisites))
 
@@ -12,7 +12,7 @@ We use Ubuntu or Xubuntu in a VM
 1.  Set up Xubuntu  
      Click on the “New” button to create a virtual operating system. Give it a name of “Xubuntu”, leave the “Machine Folder” as is, set the “Type” to “Linux” and be sure “Version” is set to “Ubuntu (64-bit)”. Continue by pressing “Next”, and choose the following options in the next steps:
 
-            1. Memory size: Use 2048 MB or more if possible. Ideally, this amount should be about half of your computer’s maximum memory.
+            1. Memory size: Use 2048 MB or more if possible.
             2. Hard disk: “Create a virtual hard disk”.
             3. Hard disk file type: Choose the VDI (VirtualBox disk image) option.
             4. Storage on physical hard disk: “Dynamically allocated”.
@@ -34,11 +34,43 @@ We use Ubuntu or Xubuntu in a VM
     1. Run `reboot` in the terminal, and the VM should reboot. If this does not work, reboot the VM by clicking the “start” menu, and selecting “reboot.”
     1. Click **devices** in the menu bar and go to **shared clipboard** then select the bidirectional option.
 
+## Visual Studio Code
+
+### installing visual studio code
+
+install VS Code from the .deb on [the site](https://code.visualstudio.com/)
+
+### Set up
+
+1. turn Word Wrap on
+1. (optional) change tab size to 2 spaces
+1. install Solarized Color Theme extension
+1. install Live Server extension  
+   open a html file and then right-click and choose _open with live server_
+1. install HTML CSS Support for Class and Id attribute completion
+1. install Auto Rename Tag for auto renaming of the paired tag when you rename one of them
+1. install Prettier - Code formatter  
+   change settings > _format on save_ to enable  
+   search _prettier_ in settings to change the settings for the code formatter
+1. install indent-rainbow for easier to see indentations
+1. install Bracket Pair Colorizer 2 for colorized brackets pair
+1. install Code Spell Checker to help catch common spelling errors in code
+
+### Basic commands
+
+1. multiple cursors with `ctrl + d` and `ctrl + shift + l`
+1. basic navigation `ctrl + home` to go to the beginning of the document, `ctrl + end` to go to the end  
+   `home` to go to the beginning of a line, `end` to go to to the end
+1. get into a line and use `alt + up or down` to move the line around the document
+1. get into a line and use `ctrl + c` to copy the line and then `ctrl + v` to paste it
+1. `ctrl + /` to add a comment, select text and then do `ctrl + /` to comment out a block, do it again to undo the comment
+1. `ctrl + shit + v` to pen a live preview for a .md file
+
 ## Terminal ([Source](https://wesbos.com/command-line-video-tutorials/))
 
-`ctrl + shit + t` to start the terminal  
-`ctrl + shit + c` to copy in the terminal  
-`ctrl + shit + v` to paste in the terminal  
+`ctrl + shift + t` to start the terminal  
+`ctrl + shift + c` to copy in the terminal  
+`ctrl + shift + v` to paste in the terminal  
 `tab` completion is a thing!
 
 ### Basic Commands
