@@ -36,33 +36,33 @@ We use Ubuntu or Xubuntu in a VM
 
 ## Visual Studio Code
 
-### installing visual studio code
+### Installing visual studio code
 
-install VS Code from the .deb on [the site](https://code.visualstudio.com/)
+Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 
 ### Set up
 
-1. turn Word Wrap on
-1. (optional) change tab size to 2 spaces
-1. install Solarized Color Theme extension
-1. install Live Server extension  
+1. Turn Word Wrap on
+1. (optional) Change tab size to 2 spaces
+1. Install Solarized Color Theme extension
+1. Install Live Server extension  
    open a html file and then right-click and choose _open with live server_
-1. install HTML CSS Support for Class and Id attribute completion
-1. install Auto Rename Tag for auto renaming of the paired tag when you rename one of them
-1. install Prettier - Code formatter  
+1. Install HTML CSS Support for Class and Id attribute completion
+1. Install Auto Rename Tag for auto renaming of the paired tag when you rename one of them
+1. Install Prettier - Code formatter  
    change settings > _format on save_ to enable  
    search _prettier_ in settings to change the settings for the code formatter
-1. install indent-rainbow for easier to see indentations
-1. install Bracket Pair Colorizer 2 for colorized brackets pair
-1. install Code Spell Checker to help catch common spelling errors in code
+1. Install indent-rainbow for easier to see indentations
+1. Install Bracket Pair Colorizer 2 for colorized brackets pair
+1. Install Code Spell Checker to help catch common spelling errors in code
 
 ### Basic commands
 
-1. multiple cursors with `ctrl + d` and `ctrl + shift + l`
-1. basic navigation `ctrl + home` to go to the beginning of the document, `ctrl + end` to go to the end  
+1. Multiple cursors with `ctrl + d` and `ctrl + shift + l`
+1. Basic navigation `ctrl + home` to go to the beginning of the document, `ctrl + end` to go to the end  
    `home` to go to the beginning of a line, `end` to go to to the end
-1. get into a line and use `alt + up or down` to move the line around the document
-1. get into a line and use `ctrl + c` to copy the line and then `ctrl + v` to paste it
+1. Get into a line and use `alt + up or down` to move the line around the document
+1. Get into a line and use `ctrl + c` to copy the line and then `ctrl + v` to paste it
 1. `ctrl + /` to add a comment, select text and then do `ctrl + /` to comment out a block, do it again to undo the comment
 1. `ctrl + shit + v` to pen a live preview for a .md file
 
@@ -70,10 +70,10 @@ install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 
 ### Installing Git
 
-1. update the packages  
+1. Update the packages  
    `sudo apt-get update`  
    `sudo apt-get upgrade`
-2. install git  
+2. Install git  
    `sudo apt-get install git`
 
 ### Configuring Git
@@ -85,7 +85,7 @@ git config --global credential.helper 'cache --timeout=3600'
 git config --global push.default current
 ```
 
-last one get rid of the need to do `git push --set-upstream`. After this, `git push -u` push current branch to a remote branch of the same name.
+Last one get rid of the need to do `git push --set-upstream`. After this, `git push -u` push current branch to a remote branch of the same name.
 
 [Add a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)  
 [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
@@ -153,12 +153,12 @@ restart the terminal to apply the theme
 
 ### Zsh advanced hisory
 
-type the command eg. `git + space` and then use up/down arrow to navigate through your history for that specific command
+Type the command eg. `git + space` and then use up/down arrow to navigate through your history for that specific command
 
 ### Zsh plugins
 
-see [plugins](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) for a list  
+See [plugins](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) for a list  
 `code ~/.zshrc` to add a plugin to the plugin list eg. **extract**  
 `source ~/.zshrc` to update  
-now you can extract any file with `extract abc.tar.gz` and don't have to memorize the specifics  
+Now you can extract any file with `extract abc.tar.gz` and don't have to memorize the specifics  
 `git` plugin is installed by default, use `git + space + tab` to see all the possible commands for git

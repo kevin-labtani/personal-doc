@@ -2,9 +2,9 @@
 
 ## Create a new repository
 
-1. create the repo on github
-1. initialize it with a README.md and a gitignore, as needed
-1. clone it with `git clone https://github.com/user-name/name-of-repo.git`
+1. Create the repo on github
+1. Initialize it with a README.md and a gitignore, as needed
+1. Clone it with `git clone https://github.com/user-name/name-of-repo.git`
 
 ## Add an existing project to GitHub
 
