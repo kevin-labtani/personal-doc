@@ -21,7 +21,7 @@ Projet créé le 15 Septembre 2019 par [**Kevin Labtani**](https://github.com/ke
 
 ## Progression
 
-Projet en cours au 15 Septembre 2019
+Projet en cours au 21 Septembre 2019
 
 - [x] README.md
 - [x] installations.md

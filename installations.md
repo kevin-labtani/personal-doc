@@ -58,17 +58,17 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 
 ### Basic commands
 
-1. Multiple cursor with `ctrl + click`
-1. Multiple cursors for next occurrence with `ctrl + d` and `ctrl + shift + l`
-1. `alt + shift + down or up arrow` to add cursor above or below
-1. Basic navigation `ctrl + home` to go to the beginning of the document, `ctrl + end` to go to the end  
+- Multiple cursor with `ctrl + click`
+- Multiple cursors for next occurrence with `ctrl + d` and `ctrl + shift + l`
+- `alt + shift + down or up arrow` to add cursor above or below
+- Basic navigation `ctrl + home` to go to the beginning of the document, `ctrl + end` to go to the end  
    `home` to go to the beginning of a line, `end` to go to to the end
-1. Get into a line and use `alt + up or down` to move the line around the document
-1. Get into a line and use `ctrl + c` to copy the line and then `ctrl + v` to paste it
-1. `ctrl + shift + k` to delete a line
-1. `ctrl + shift + alt + down or up arrow` to copy line down or up
-1. `ctrl + /` to add a comment, select text and then do `ctrl + /` to comment out a block, do it again to undo the comment
-1. `ctrl + shit + v` to open a live preview for a .md file
+- Get into a line and use `alt + up or down` to move the line around the document
+- Get into a line and use `ctrl + c` to copy the line and then `ctrl + v` to paste it
+- `ctrl + shift + k` to delete a line
+- `ctrl + shift + alt + down or up arrow` to copy line down or up
+- `ctrl + /` to add a comment, select text and then do `ctrl + /` to comment out a block, do it again to undo the comment
+- `ctrl + shit + v` to open a live preview for a .md file
 
 ## Git and Github
 
@@ -148,12 +148,12 @@ restart the terminal to apply the theme
 
 ### Zsh basic features
 
-1. Able to use lowercase even if dir or file name is uppercase, it's smart enough to change
-1. `cd + space + tab` will open a list of all directories (with already escaped spaces), `tab` again and you can navigate through the list with arrow keys
-1. Use `~` to go home, or `..` to go up a level without having to type `cd`
-1. `ctrl` and click a link will take you to it
-1. Use `take name_of_dir` to replace `mkdir name_of_dir` + `cd name_of_dir`
-1. Use eg. `ls - tab` to see all the possible flags for ls
+- Able to use lowercase even if dir or file name is uppercase, it's smart enough to change
+- `cd + space + tab` will open a list of all directories (with already escaped spaces), `tab` again and you can navigate through the list with arrow keys
+- Use `~` to go home, or `..` to go up a level without having to type `cd`
+- `ctrl` and click a link will take you to it
+- Use `take name_of_dir` to replace `mkdir name_of_dir` + `cd name_of_dir`
+- Use eg. `ls - tab` to see all the possible flags for ls
 
 ### Zsh advanced hisory
 
