@@ -208,4 +208,9 @@
   </form>
   ```
 
-- 
+- [HTML Entities](https://www.w3schools.com/html/html_entities.asp)  
+  Reserved characters in HTML must be replaced with character entities.
+  - non-breaking space: `&nbsp;`
+  - copyright: `&copy;`
+  - greater than: `&gt;`
+  - less than: `&lt;`

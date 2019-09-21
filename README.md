@@ -10,6 +10,7 @@ Projet créé le 15 Septembre 2019 par [**Kevin Labtani**](https://github.com/ke
 1. [Guide d'Installation de l'environnement de développeur](/installations.md)
 1. [Guide pour Git](/git.md)
 1. [Guide de Markdown & Comment réaliser un `README.md` pour un projet github](/markdown-readme.md)
+1. [Guide HTML](/html.md)
 
 ## Contributeur
 
@@ -27,7 +28,7 @@ Projet en cours au 21 Septembre 2019
 - [x] installations.md
 - [x] git.md
 - [x] markdown-readme.md
-- [ ] html
+- [x] html
 - [ ] css
 
 ## Remerciements
