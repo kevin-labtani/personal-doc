@@ -92,6 +92,12 @@ Don't work on the **Master** branch! Work on a **Develop** branch
   `git revert HEAD`
 - [ How to undo (almost) anything with Git ](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/)
 
+## Resolve a conflict
+
+1. Edit the file in the code editor to resolve the conflict
+1. Explicitly `git add` the file to explicitly tell git you resolved the conflict
+1. `git commit`
+
 ## Synchronize
 
 - Get the latest changes from origin (no merge)  
