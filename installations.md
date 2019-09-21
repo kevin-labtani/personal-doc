@@ -58,8 +58,9 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 
 ### Basic commands
 
-- Multiple cursor with `ctrl + click`
-- Multiple cursors for next occurrence with `ctrl + d` and `ctrl + shift + l`
+- Multiple cursor with `ctrl + click`, do it again on a specific cursor to remove it
+- Multiple cursors for next occurrence with `ctrl + d` and for all occurrences with `ctrl + shift + l`
+- `alt + shift + click and drag` to drag a bunch or cursors across lines
 - `alt + shift + down or up arrow` to add cursor above or below
 - Basic navigation `ctrl + home` to go to the beginning of the document, `ctrl + end` to go to the end  
    `home` to go to the beginning of a line, `end` to go to to the end
@@ -69,6 +70,7 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 - `ctrl + shift + alt + down or up arrow` to copy line down or up
 - `ctrl + /` to add a comment, select text and then do `ctrl + /` to comment out a block, do it again to undo the comment
 - `ctrl + shit + v` to open a live preview for a .md file
+- `ctrl + p` to go to file
 
 ## Git and Github
 
