@@ -71,6 +71,7 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 - `ctrl + /` to add a comment, select text and then do `ctrl + /` to comment out a block, do it again to undo the comment
 - `ctrl + shit + v` to open a live preview for a .md file
 - `ctrl + p` to go to file
+- click on a variable and press `F2` to rename all instances
 
 ## Git and Github
 
