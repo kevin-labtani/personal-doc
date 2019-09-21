@@ -38,3 +38,32 @@ Projet en cours au ???
 ```
 
 ### [Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+
+## Extra stuff you can use in github flavored Markdown
+
+- `<p align=center> center </p>`, you can also use `left` or `right`
+  <p align=center> center </p>
+- ```
+  <dl>
+      <dt>Images</dt>
+      <dd>.jpg, .gif, .png</dd>
+  </dl>
+  ```
+  <dl>
+    <dt>Images</dt>
+    <dd>.jpg, .gif, .png</dd>
+  </dl>
+- ````
+  <details>
+      <summary>Click me for something amazing</summary>
+    ```ts
+      let Hello : sting = 'World';
+    ```
+  </details>
+  ````
+  <details>
+      <summary>Click me for something amazing</summary>  
+    ```ts
+      let Hello : sting = 'World';
+    ```
+  </details>
