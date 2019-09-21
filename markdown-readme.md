@@ -41,8 +41,8 @@ Projet en cours au ???
 
 ## Extra stuff you can use in github flavored Markdown
 
-- `<p align=center> center </p>`, you can also use `left` or `right`
-  <p align=center> center </p>
+- `<p align=center>lorem</p>`, you can also use `left` or `right`
+  <p align=center>lorem</p>
 - ```
   <dl>
       <dt>Images</dt>
@@ -56,14 +56,19 @@ Projet en cours au ???
 - ````
   <details>
       <summary>Click me for something amazing</summary>
+
     ```ts
       let Hello : sting = 'World';
     ```
   </details>
   ````
+
   <details>
-      <summary>Click me for something amazing</summary>  
+      <summary>Click me for something amazing</summary> 
+       
     ```ts
       let Hello : sting = 'World';
     ```
   </details>
+
+- Tables
