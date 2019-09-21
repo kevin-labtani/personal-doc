@@ -88,6 +88,9 @@ Don't work on the **Master** branch! Work on a **Develop** branch
    `git reset [file]`
 - Revert everything to the last commit  
    `git reset --hard`
+- Undo a public commit (that's already been pushed)  
+  `git revert HEAD`
+- [ How to undo (almost) anything with Git ](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/)
 
 ## Synchronize
 
