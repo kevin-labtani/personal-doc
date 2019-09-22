@@ -409,3 +409,18 @@ The display property specifies the display behavior (the type of rendering box) 
   ```
 
   If set to `0`, the extra space around content isn't factored in. If set to `auto`, the extra space is distributed based on its `flex-grow` value.
+
+### Tips & Tricks
+
+- Perfect Centering
+
+  ```css
+  .flex-container {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  ```
+
+- `flex-wrap` and `flex-basis` work together in that flx-basis wil only work on the item 
