@@ -18,7 +18,7 @@
 
 ## How it works:
 
-![How it Works](/assets/git-how-it-works.png)
+![How it Works](./assets/git-how-it-works.png)
 
 ## Observe your repo
 
@@ -44,7 +44,7 @@
 ## Branching
 
 [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)  
-![Branching Model](/assets/git-branching-model.png)  
+![Branching Model](./assets/git-branching-model.png)  
 Don't work on the **Master** branch! Work on a **Develop** branch
 
 - List all local branches  

@@ -23,7 +23,7 @@
 
 ## HTML
 
-![semantic elements](/assets/img_sem_elements.gif)
+![semantic elements](./assets/img_sem_elements.gif)
 
 - only 1 `<h1>` per page
 
