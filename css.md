@@ -5,13 +5,15 @@
 - [CSS dinner game](http://flukeout.github.io/)
 - [CSS selectors reference](https://www.w3schools.com/cssref/css_selectors.asp)
 
-## Extra Tips
+## Tips & tricks
 
 - `visibility: hidden` vs `display: none`: it keeps the element in the DOM and space is allocated for it on the page
 
 - to override another style, we can use the `!important` flag
 
 - `margin-top: -30px;` to move up the element 30px
+
+- `background #333 url('https://source.unsplash.com/random') no-repeat center center/cover;` image (with fallback color) that won't repeat be centered and cover our content
 
 ## Fonts
 
@@ -423,4 +425,83 @@ The display property specifies the display behavior (the type of rendering box) 
   }
   ```
 
-- `flex-wrap` and `flex-basis` work together in that flx-basis wil only work on the item 
+- `flex-wrap` and `flex-basis` work together in that flx-basis wil only work on the item
+
+## Responsive Design
+
+- Set the viewport tag (default with Emmet)
+- Use fluid width (max-width instead of width)
+- Media queries
+- Rem units
+- Mobile first design, do all base styling targetting mobile and use media queries for big screens
+
+Use device toolbar in chrome dev tools to test
+
+### Media Queries
+
+[W3Schools Tutorial](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
+
+If the browser window is 600px or smaller, the background color will be lightblue:
+
+```css
+body {
+  background-color: lightgreen;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+```
+
+Hide an element when the browser's width is 600px wide or less:
+
+```css
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+```
+
+Use `max-height` for when the user phone or tablet is in landscape
+
+We can made a separate style sheet and import it after our main style sheet: `<link rel="stylesheet" media="screen and (max-width: 600px" href="mobile.css">`
+
+### `em` & `rem` units
+
+- `em` unit is relative to the font size of the parent element
+
+```css
+
+body {
+  font-size: 20px;
+}
+p {
+  font-size; 1.5em; /* 30px */
+  padding 1em; /* the padding will be 30px as we
+  defined a font-size and it'll use that as a reference */
+  /* same issue with nested elements */
+}
+
+```
+
+- `rem` unit is relative to the font size of the root html element.
+  - Set a `font-size` value the font for `html{}` to change for the entire document.
+  - A value of 62.5% will set the size of the root to 10px which makes it easier to calculate later, when necessary.
+  - `rem` also good to use for accessibility features, as the user can set a large font in the browser and rem will scale.
+
+### vh and vw units
+
+- _viewport height_ and _viewport width_
+- `50vh` will take a slice across of 50 out of the `100vh`
+- Same thing with `vw`, but the slices go down
+
+We want a header to take 100% of the screen, we can't use `height: 100%` because the `body` is just a wrapper around the content, it doensn't actually take all of the height of the page, so we use `vh`
+
+```css
+header {
+  height: 100vh;
+}
+```
