@@ -425,7 +425,7 @@ The display property specifies the display behavior (the type of rendering box) 
   }
   ```
 
-- `flex-wrap` and `flex-basis` work together in that flx-basis wil only work on the item
+- `flex-wrap` and `flex-basis` work together in that flex-basis will only work on the item
 
 ## Responsive Design
 
