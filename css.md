@@ -555,3 +555,33 @@ header::before {
   z-index: -1;
 }
 ```
+
+## Box Shadow
+
+```css
+box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+```
+
+`inset` changes the shadow from an outer shadow (`outset`) to an inner shadow
+
+## Text Shadow
+
+```css
+text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+```
+
+## CSS variables
+
+```css
+:root {
+  --first-color: #488cff;
+  --second-color: #ffff8c;
+}
+
+#firstParagraph {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+```
+
+Notice the `:root` pseudo-class selector — we can declare our variables globally using it. We can also declare them using other selectors, and they will then be scoped in those.
