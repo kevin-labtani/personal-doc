@@ -1,10 +1,5 @@
 # CSS
 
-## Selectors
-
-- [CSS dinner game](http://flukeout.github.io/)
-- [CSS selectors reference](https://www.w3schools.com/cssref/css_selectors.asp)
-
 ## Tips & tricks
 
 - `visibility: hidden` vs `display: none`: it keeps the element in the DOM and space is allocated for it on the page
@@ -505,3 +500,13 @@ header {
   height: 100vh;
 }
 ```
+
+## Selectors
+
+- [CSS dinner game](http://flukeout.github.io/)
+
+- [CSS selectors reference](https://www.w3schools.com/cssref/css_selectors.asp)
+
+| Selector          | description                                                                   |
+| ----------------- | ----------------------------------------------------------------------------- |
+| `.class1 .class2` | Selects all elements with name2 that is a descendant of an element with name1 |
