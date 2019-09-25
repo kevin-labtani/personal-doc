@@ -11,12 +11,18 @@
 - `background #333 url('https://source.unsplash.com/random') no-repeat center center/cover;` image (with fallback color) that won't repeat be centered and cover our content
 
 - The `overflow` property specifies what should happen if content overflows an element's box.
-    - `visible`	The overflow is not clipped. It renders outside the element's box. This is default	
-    - `hidden`	The overflow is clipped, and the rest of the content will be invisible	
-    - `scroll`	The overflow is clipped, but a scroll-bar is added to see the rest of the content
-    - `auto`	If overflow is clipped, a scroll-bar should be added to see the rest of the content
 
+  - `visible` The overflow is not clipped. It renders outside the element's box. This is default
+  - `hidden` The overflow is clipped, and the rest of the content will be invisible
+  - `scroll` The overflow is clipped, but a scroll-bar is added to see the rest of the content
+  - `auto` If overflow is clipped, a scroll-bar should be added to see the rest of the content
 
+- to target the input field on the `input` or `textarea` field of a form when a user is focused on it use the `:focus` selector
+  ```css
+  input:focus {
+    border-color: yellow;
+  }
+  ```
 
 ## Fonts
 
