@@ -434,7 +434,7 @@ Use device toolbar in chrome dev tools to test
 
 ### Media Queries
 
-[W3Schools Tutorial](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
+[W3Schools guide](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 
 If the browser window is 600px or smaller, the background color will be lightblue:
 
@@ -570,7 +570,7 @@ box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
 text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
 ```
 
-## CSS variables
+## CSS Variables
 
 ```css
 :root {
@@ -585,3 +585,117 @@ text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
 ```
 
 Notice the `:root` pseudo-class selector — we can declare our variables globally using it. We can also declare them using other selectors, and they will then be scoped in those.
+
+## Keyframe Animation
+
+```html
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation-name: example;
+      animation-duration: 4s;
+    }
+    @keyframes example {
+      0% {
+        background-color: red;
+      }
+      25% {
+        background-color: yellow;
+      }
+      50% {
+        background-color: blue;
+      }
+      100% {
+        background-color: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+```
+
+- The `animation-delay` property specifies a delay for the start of an animation.
+- The `animation-iteration-count` property specifies the number of times an animation should run.
+- The `animation-direction` property specifies whether an animation should be played forwards, backwards or in alternate cycles.
+- The `animation-timing-function` property specifies the speed curve of the animation.
+- The `animation-fill-mode` property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both).
+  - `forwards` - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+  - `backwards` - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+
+## CSS Transitions
+
+To create a transition effect, you must specify two things:
+
+- the CSS property you want to add an effect to
+- the duration of the effect
+
+```html
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: width 2s, height 4s;
+    }
+
+    div:hover {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+```
+
+- The `transition-timing-function` property specifies the speed curve of the transition effect.
+- The `transition-delay` property specifies a delay (in seconds) for the transition effect.
+
+## CSS Transform
+
+[W3School guide](https://www.w3schools.com/cssref/css3_pr_transform.asp)
+
+```css
+div.a {
+  transform: rotate(20deg);
+}
+
+div.b {
+  transform: skewY(20deg);
+}
+
+div.c {
+  transform: scaleY(1.5);
+}
+```
+
+Transition & Transform:
+
+```html
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: width 2s, height 2s, transform 2s;
+    }
+
+    div:hover {
+      width: 300px;
+      height: 300px;
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+```
