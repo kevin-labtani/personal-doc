@@ -507,6 +507,51 @@ header {
 
 - [CSS selectors reference](https://www.w3schools.com/cssref/css_selectors.asp)
 
-| Selector          | description                                                                   |
-| ----------------- | ----------------------------------------------------------------------------- |
-| `.class1 .class2` | Selects all elements with name2 that is a descendant of an element with name1 |
+| Selector            | Example                                                    | Description                                                                       |
+| ------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `.class1 .class2`   | `<div class="name1"> <div class="name2">... </div> </div>` | Selects all elements with `name2` that is a descendant of an element with `name1` |
+| `element>element`   | `div > p`                                                  | Selects all `<p>` elements where the parent is a `<div>` element                  |
+| `element+element`   | `div + p`                                                  | Selects all `<p>` elements that are placed immediately after`<div>` elements      |
+| `[attribute]`       | `a[target]`                                                | Selects all `a` elements with a `target` attribute                                |
+| `[attribute=value]` | `[target=_blank]`                                          | Selects all elements with `target="_blank"`                                       |
+| `:first-child`      | `p:first-child`                                            | Selects every `<p>` element that is the first child of its parent                 |
+| `:nth-child(n)`     | `p:nth-child(2)`                                           | Selects every `<p>` element that is the second child of its parent                |
+| `:nth-of-type(n)`   | `p:nth-of-type(2)`                                         | Selects every `<p>` element that is the second `<p>` element of its parent        |
+| `:nth-child(3n+7)`  | `p:nth-child(3n+7)`                                        | Selects every 3rd `<p>` element that is the child of its parent, after the 7th    |
+| `:nth-child(odd)`   | `p:nth-child(odd)`                                         | Selects every odd `<p>` element that is the child of its parent                   |
+| `::before`          | `p::before`                                                | Insert something before the content of each `<p>` element                         |
+| `::after`           | `p::after`                                                 | Insert something after the content of each `<p>` element                          |
+
+use of `::after` (The `content` property is used with the `::before` and `::after` pseudo-elements, to insert generated content.)
+
+```html
+<style>
+  .is-required::after {
+    content: "*";
+    color: red;
+    padding-left: 2px;
+  }
+</style>
+...
+<body>
+  <label class="is-required" for="name">Name</label>
+  <input type="text" />
+</body>
+```
+
+use of `::before` to insert an image behind a header and opacify it (to better see the header text) without opacifying the text of the header itself
+
+```css
+header::before {
+  content: "";
+  background: url("https://source.unsplash.com/random/1600x900/?nature,water")
+    no-repeat center center/cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+```
