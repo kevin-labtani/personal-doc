@@ -108,21 +108,33 @@ Then move on to [Using Git](/git.md)
 
 ### Basic Commands
 
-| Command                   | What it does                                            |
-| ------------------------- | ------------------------------------------------------- |
-| `pwd`                     | for present working directory, to find out where we are |
-| `cd name-of-dir`          | to change to _name-of-dir_ directory                    |
-| `cd ..`                   | to go up a level in directories                         |
-| `cd ~`                    | to go to the home directory                             |
-| `mkdir`                   | to make a directory                                     |
-| `ls`                      | to list the files in the directory                      |
-| `ls -l`                   | to list the files in the directory with full info       |
-| `rm name-of-file`         | to remove _name-of-file_                                |
-| `rm -r name-of-directory` | to remove _name-of-dir_                                 |
-| `touch name-of-file.txt`  | to create _name-of-file.txt_                            |
-| `cp a.txt b.txt`          | to copy _a.txt_ to _b.txt_                              |
-| `mv a.txt b.txt`          | to rename _a.txt_ to _b.txt_                            |
-| `clear`                   | to clear the terminal window                            |
+| Command                   | What it does                                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `pwd`                     | for present working directory, to find out where we are                                                  |
+| `cd name-of-dir`          | to change to _name-of-dir_ directory                                                                     |
+| `cd ..`                   | to go up a level in directories                                                                          |
+| `cd ~`                    | to go to the home directory                                                                              |
+| `mkdir`                   | to make a directory                                                                                      |
+| `ls`                      | to list the files in the directory                                                                       |
+| `ls -l`                   | same but with ownership and group information                                                            |
+| `rm name-of-file`         | to remove _name-of-file_                                                                                 |
+| `rm -r name-of-directory` | to remove _name-of-dir_                                                                                  |
+| `touch name-of-file.txt`  | to create _name-of-file.txt_                                                                             |
+| `cp a.txt b.txt`          | to copy _a.txt_ to _b.txt_                                                                               |
+| `mv a.txt b.txt`          | to rename _a.txt_ to _b.txt_                                                                             |
+| `clear`                   | to clear the terminal window                                                                             |
+| ------------              | ------------                                                                                             |
+| `man`                     | to display an interface to the on-line reference manuals                                                 |
+| `whoami`                  | to print current logged user                                                                             |
+| `whatis`                  | to display one-line manual page descriptions                                                             |
+| `echo "42" > first.txt`   | to write _"42"_ to the (existing) _first.txt_ file                                                       |
+| `chown vivek demo.txt`    | to change file ownership to _vivek_ user                                                                 |
+| `chmod`                   | to change permissions of a file; [guide](https://www.pluralsight.com/blog/it-ops/linux-file-permissions) |
+| 'ps -aux \| less'         | to report a snapshot of the current processes.                                                           |
+
+### Install `vim`
+
+Run through `vimtutor`
 
 ### Installing ZSH and Oh My Zsh
 
