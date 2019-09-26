@@ -713,3 +713,19 @@ Transition & Transform:
   <div></div>
 </body>
 ```
+
+`Transition: all`
+
+```css
+.element {
+  width: 400px;
+  height: 400px;
+  transition: all 1s ease-in;
+  /* equivalent to  transition: width 1s ease-in, height 1s ease-in; */
+}
+
+.element:hover {
+  width: 500px;
+  height: 500px;
+}
+```
