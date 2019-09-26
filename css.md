@@ -18,11 +18,14 @@
   - `auto` If overflow is clipped, a scroll-bar should be added to see the rest of the content
 
 - to target the input field on the `input` or `textarea` field of a form when a user is focused on it use the `:focus` selector
+
   ```css
   input:focus {
     border-color: yellow;
   }
   ```
+
+- Add a smooth scrolling effect to the document with `html {scroll-behavior: smooth;}`
 
 ## Fonts
 
