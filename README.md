@@ -12,6 +12,7 @@ Projet créé le 15 Septembre 2019 par [**Kevin Labtani**](https://github.com/ke
 1. [Guide Markdown & Comment réaliser un `README.md` pour un projet github](/markdown-readme.md)
 1. [Guide HTML](/html.md)
 1. [Guide CSS](/css.md)
+1. [Guide Sass](/sass.md)
 
 ## Contributeur
 
@@ -23,14 +24,15 @@ Projet créé le 15 Septembre 2019 par [**Kevin Labtani**](https://github.com/ke
 
 ## Progression
 
-Projet en cours au 21 Septembre 2019
+Projet en cours au 27 Septembre 2019
 
 - [x] README.md
 - [x] installations.md
 - [x] git.md
 - [x] markdown-readme.md
 - [x] html
-- [ ] css
+- [x] css
+- [x] Sass
 
 ## Remerciements
 
