@@ -43,6 +43,11 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 ### Set up
 
 1. Turn Word Wrap on
+1. Install [Fira Code](https://github.com/tonsky/FiraCode/wiki/Installing) font and turn on font ligatures
+1. Automatically format pasted code `"editor.formatOnPaste": true`
+1. Highlight modified tabs `"workbench.editor.highlightModifiedTabs": true`
+1. Autosave `"files.autoSave": "afterDelay"`
+1. Enable font ligatures `"editor.fontLigatures": true`
 1. (optional) Change tab size to 2 spaces
 1. Install **Solarized Color Theme** extension
 1. Install **Live Server extension**  
