@@ -163,8 +163,14 @@ Z-shell is one of the most popular shell
 
 ### Customize Terminal colors and font
 
-You can change the colors and font through the terminal configuration  
-pick Solarized dark
+- You can change the colors and font through the terminal configuration
+- Pick Solarized dark
+- Install Powerline fonts
+  ```
+  $ git clone https://github.com/powerline/fonts.git
+  $ cd fonts
+  $ ./install.sh
+  ```
 
 ### Customize Oh My Zsh theme and prompt
 
