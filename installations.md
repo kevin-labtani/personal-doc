@@ -192,3 +192,21 @@ See [plugins](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) for a list
 `source ~/.zshrc` to update  
 Now you can extract any file with `extract abc.tar.gz` and don't have to memorize the specifics  
 `git` plugin is installed by default, use `git + space + tab` to see all the possible commands for git
+
+### Configure Zsh for use in vscode terminal
+
+- install font
+
+```
+git clone https://github.com/abertsch/Menlo-for-Powerline.git
+sudo mv "Menlo for Powerline.ttf" /usr/share/fonts/
+sudo fc-cache -vf /usr/share/fonts/
+```
+
+- settings:
+
+```json
+"terminal.external.linuxExec": "/usr/bin/zsh",
+"terminal.integrated.shell.linux": "/usr/bin/zsh",
+"terminal.integrated.fontFamily": "Menlo for Powerline",
+```
