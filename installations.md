@@ -60,6 +60,12 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 1. Install **indent-rainbow** for easier to see indentations
 1. Install **Bracket Pair Colorizer 2** for colorized brackets pair
 1. Install **Code Spell Checker** to help catch common spelling errors in code nb: check for English
+1. Remote style sheets can be specified in VS Code settings:
+   ```json
+   "css.remoteStyleSheets": [
+   "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+   ]
+   ```
 
 ### Basic commands
 
