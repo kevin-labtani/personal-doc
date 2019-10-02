@@ -732,3 +732,153 @@ Transition & Transform:
   height: 500px;
 }
 ```
+
+## Grid
+
+- [Guide to flexbox](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Grid garden game](http://cssgridgarden.com/)
+
+### Properties for the Parent (Grid Container)
+
+- display
+
+  defines the element as a grid container
+
+  ```css
+  .container {
+    display: grid | inline-grid;
+  }
+  ```
+
+- grid-template-columns  
+  grid-template-rows
+
+  defines the columns and rows of the grid with a space-separated list of values. The values represent the track size, and the space between them represents the grid line.
+
+  ```css
+  .container {
+    grid-template-columns: <track-size> ... | <line-name> <track-size> ...;
+    grid-template-rows: <track-size> ... | <line-name> <track-size> ...;
+  }
+
+  /* example */
+  .container {
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+  }
+
+  .container {
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 20px [col-start]);
+  }
+
+  .container {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  ```
+
+  auto-sizing with `auto-fit` and `minmax`
+
+  ```css
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  ```
+
+  These keywords tell the browser to handle the column sizing and element wrapping for us, so that the elements will wrap into rows when the width is not large enough to fit them in without any overflow. The fraction unit we used also ensures that, in case the width allows for a fraction of a column to fit but not a full column, that space will instead be distributed over the column or columns that already fit, making sure we aren't left with any empty space at the end of the row
+
+- grid-gap
+
+  setting the width of the gutters between the columns/rows
+
+  ```css
+  .container {
+    grid-gap: <grid-row-gap> <grid-column-gap>;
+  }
+  ```
+
+- grid-template-areas
+
+  Defines a grid template by referencing the names of the grid areas which are specified with the `grid-area` property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell.
+
+  ```css
+  .container {
+    grid-template-areas:
+      "<grid-area-name> | . | none | ..."
+      "...";
+  }
+
+  /* example */
+  .item-a {
+    grid-area: header;
+  }
+  .item-b {
+    grid-area: main;
+  }
+  .item-c {
+    grid-area: sidebar;
+  }
+  .item-d {
+    grid-area: footer;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+  }
+  ```
+
+### Properties for the Children (Grid Items)
+
+- grid-column-start  
+  grid-column-end  
+  grid-row-start  
+  grid-row-end
+
+  determines a grid item's location within the grid by referring to specific grid lines. `grid-column-start`/`grid-row-start` is the line where the item begins, and `grid-column-end`/`grid-row-end` is the line where the item ends.
+
+  we can make an item span multiple rows & columns
+
+  ```css
+  .item {
+    grid-column-start: <number> | <name> | span <number> | span <name> | auto;
+    grid-column-end: <number> | <name> | span <number> | span <name> | auto;
+    grid-row-start: <number> | <name> | span <number> | span <name> | auto;
+    grid-row-end: <number> | <name> | span <number> | span <name> | auto;
+  }
+  /* example (count the lines for the numbers) */
+  .item-a {
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+  }
+
+  .item-b {
+    grid-column-start: 1;
+    grid-column-end: span col4-start; /* from the beginning till col4-start */
+    grid-row-start: 2;
+    grid-row-end: span 2;
+  }
+  ```
+
+- grid-column  
+  grid-row
+
+  Shorthand for grid-column-start + grid-column-end, and grid-row-start + grid-row-end, respectively.
+
+  ```css
+  .item-c {
+    grid-column: 3 / span 2;
+    grid-row: third-line / 4;
+  }
+  ```
