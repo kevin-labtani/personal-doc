@@ -216,3 +216,10 @@ sudo fc-cache -vf /usr/share/fonts/
 "terminal.integrated.shell.linux": "/usr/bin/zsh",
 "terminal.integrated.fontFamily": "Menlo for Powerline",
 ```
+
+## Update Nodejs to v10.x
+
+```
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
