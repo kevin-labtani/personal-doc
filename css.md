@@ -882,3 +882,32 @@ Transition & Transform:
     grid-row: third-line / 4;
   }
   ```
+
+## Accessibility
+
+- [Techniques for hiding text](https://webaim.org/techniques/css/invisiblecontent/)  
+  by absolutely positioning content off-screen with a custom class
+  ```css
+  .hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  ```
+- [Fontawesome accessibility](https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility)
+  ```html
+  <!-- for icons with semantic meaning -->
+  <a
+    href="path/to/shopping/cart"
+    aria-label="View 3 items in your shopping cart"
+  >
+    <i aria-hidden="true" class="fas fa-shopping-cart"></i>
+  </a>
+  ```
+  ```html
+  <!-- for purely decorative icons -->
+  <i class="fas fa-camera-retro" aria-hidden="true"></i>
+  ```
