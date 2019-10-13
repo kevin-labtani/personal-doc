@@ -50,6 +50,7 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 1. Enable font ligatures `"editor.fontLigatures": true`
 1. (optional) Change tab size to 2 spaces
 1. Install **Solarized Color Theme** extension
+1. Install **Material Theme** and **Material Icon Theme**
 1. Install **Live Server extension**  
    open a html file and then right-click and choose _open with live server_
 1. Install **HTML CSS Support** for Class and Id attribute completion
@@ -66,6 +67,7 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
    "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
    ]
    ```
+1. Install **Babel es6/es7** extension for JS
 
 ### Basic commands
 
