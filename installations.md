@@ -68,6 +68,7 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
    ]
    ```
 1. Install **Babel es6/es7** extension for JS
+1. Install **CSS Peek** extension, use F12 to go to css rule when on the html doc
 
 ### Basic commands
 
