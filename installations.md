@@ -56,8 +56,8 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 1. Install **HTML CSS Support** for Class and Id attribute completion
 1. Install **Auto Rename Tag** for auto renaming of the paired tag when you rename one of them
 1. Install **Prettier - Code formatter**  
-   change settings > _format on save_ to enable  
-   search _prettier_ in settings to change the settings for the code formatter
+   change settings > _format on save_ to enable
+1. Install **Formatting Toggle** to be able to toggle on or off the formatter
 1. Install **indent-rainbow** for easier to see indentations
 1. Install **Bracket Pair Colorizer 2** for colorized brackets pair
 1. Install **Code Spell Checker** to help catch common spelling errors in code nb: check for English
