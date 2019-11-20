@@ -107,7 +107,8 @@ git config --global credential.helper 'cache --timeout=3600'
 git config --global push.default current
 ```
 
-Last one get rid of the need to do `git push --set-upstream`. After this, `git push -u` push current branch to a remote branch of the same name.
+Last one pushes the current branch to a branch of the same name
+After this, do `git push -u` (for `git push --set-upstream`) and it'll automatically push the current local branch to a remote branch of the same name, set up tracking and create it if it doesn't exist.
 
 [Add a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)  
 [Testing your SSH connection](https://help.github.com/en/articles/testing-your-ssh-connection)
