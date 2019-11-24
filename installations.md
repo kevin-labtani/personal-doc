@@ -228,3 +228,11 @@ sudo fc-cache -vf /usr/share/fonts/
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+
+## PHP
+1. download [XAMPP](https://www.apachefriends.org/index.html)
+1. `sudo apt install net-tools`
+1. install with `chmod 755 xampp-linux-*-installer.run` and `sudo ./xampp-linux-*-installer.run`
+1. start XAMPP with `sudo /opt/lampp/lampp start`  
+   or use gui with `cd /opt/lampp` and `sudo ./manager-linux-x64.run`
+1. stop XAMPP with `sudo /opt/lampp/lampp stop`
