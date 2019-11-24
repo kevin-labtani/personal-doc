@@ -236,3 +236,5 @@ sudo apt-get install -y nodejs
 1. start XAMPP with `sudo /opt/lampp/lampp start`  
    or use gui with `cd /opt/lampp` and `sudo ./manager-linux-x64.run`
 1. stop XAMPP with `sudo /opt/lampp/lampp stop`
+1. install php `sudo apt-get install php` 
+1. add **PHP IntelliSense** to VSCode
