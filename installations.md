@@ -238,3 +238,8 @@ sudo apt-get install -y nodejs
 1. stop XAMPP with `sudo /opt/lampp/lampp stop`
 1. install php `sudo apt-get install php` 
 1. add **PHP IntelliSense** to VSCode
+
+nb: if we get the error "Another web server is already running" when starting xampp do:
+`sudo netstat -nap | grep :80`
+You’ll see apache2 and there is 3–4 digit numbers before it, so do
+`sudo kill [number]`
