@@ -237,7 +237,17 @@ sudo apt-get install -y nodejs
    or use gui with `cd /opt/lampp` and `sudo ./manager-linux-x64.run`
 1. stop XAMPP with `sudo /opt/lampp/lampp stop`
 1. install php `sudo apt-get install php` 
-1. add **PHP IntelliSense** to VSCode
+1. configure VSCode
+    1. add **PHP IntelliSense** to VSCode
+    1. add **PHP CS Fixer** to VSCode
+    1. add to `settings.json`
+        ```json
+          "[php]": {
+          "editor.defaultFormatter": "junstyle.php-cs-fixer",
+          },
+          "php.suggest.basic": false,
+          "php-cs-fixer.rules": "@PhpCsFixer",
+        ```
 
 nb: 
 - if we get the error "Another web server is already running" when starting xampp do:
