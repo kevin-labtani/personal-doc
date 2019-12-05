@@ -58,6 +58,7 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 1. Install **Prettier - Code formatter**  
    change settings > _format on save_ to enable
 1. Install **Formatting Toggle** to be able to toggle on or off the formatter
+1. Install **ESLint** for JS linting
 1. Install **indent-rainbow** for easier to see indentations
 1. Install **Bracket Pair Colorizer 2** for colorized brackets pair
 1. Install **Code Spell Checker** to help catch common spelling errors in code nb: check for English
@@ -230,29 +231,84 @@ sudo apt-get install -y nodejs
 ```
 
 ## PHP
+
 1. download [XAMPP](https://www.apachefriends.org/index.html)
 1. `sudo apt install net-tools`
 1. install with `chmod 755 xampp-linux-*-installer.run` and `sudo ./xampp-linux-*-installer.run`
 1. start XAMPP with `sudo /opt/lampp/lampp start`  
    or use gui with `cd /opt/lampp` and `sudo ./manager-linux-x64.run`
 1. stop XAMPP with `sudo /opt/lampp/lampp stop`
-1. install php `sudo apt-get install php` 
+1. install php `sudo apt-get install php`
 1. configure VSCode
-    1. add **PHP IntelliSense** to VSCode
-    1. add **PHP CS Fixer** to VSCode
-    1. add to `settings.json`
-        ```json
-          "[php]": {
-          "editor.defaultFormatter": "junstyle.php-cs-fixer",
-          },
-          "php.suggest.basic": false,
-          "php-cs-fixer.rules": "@PhpCsFixer",
-        ```
+   1. add **PHP IntelliSense** to VSCode
+   1. add **PHP CS Fixer** to VSCode
+   1. add to `settings.json`
+      ```json
+        "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer",
+        },
+        "php.suggest.basic": false,
+        "php-cs-fixer.rules": "@PhpCsFixer",
+      ```
 
-nb: 
+nb:
+
 - if we get the error "Another web server is already running" when starting xampp do:
-`sudo netstat -nap | grep :80`
-You’ll see apache2 and there is 3–4 digit numbers before it, so do
-`sudo kill [number]`
+  `sudo netstat -nap | grep :80`
+  You’ll see apache2 and there is 3–4 digit numbers before it, so do
+  `sudo kill [number]`
 
 - run `sudo chown -R $USER:$USER .` in folders inside htdocs if we get permissions issues
+
+## Prettier and ESLint with airbnb rules
+
+1. `sudo npm install -g prettier`
+1. `sudo npm install -g eslint`
+1. install Prettier and ESLint as VS Code extension
+1. `npm init -y` in local project
+1. make a prettier config file `touch .prettierrc`
+
+   ```json
+   {
+     "semi": true,
+     "trailingComma": "all",
+     "singleQuote": false,
+     "printWidth": 80,
+     "tabWidth": 2
+   }
+   ```
+
+1. `npm install --save-dev eslint-config-prettier eslint-plugin-prettier`
+1. make an eslint config `touch .eslintrc.json`
+
+   ```json
+   {
+     "extends": ["prettier"],
+     "plugins": ["prettier"],
+     "rules": {
+       "prettier/prettier": ["error"]
+     }
+   }
+   ```
+
+1. create an ignore file for files you want to ignore `.eslintignore`
+1. `npx install-peerdeps --dev eslint-config-airbnb`  
+    change `.eslintrc.json` to
+
+   ```json
+   {
+     "env": {
+       "browser": true,
+       "es6": true,
+       "node": true
+     },
+     "extends": ["airbnb", "prettier"],
+     "plugins": ["prettier"],
+     "rules": {
+       "prettier/prettier": ["error"]
+     }
+   }
+   ```
+
+1. might need to `npm install --save-dev prettier` for eslint to work with it
+1. running `npx eslint --init` also an option to setup eslint
