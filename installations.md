@@ -262,8 +262,8 @@ nb:
 
 ## Prettier and ESLint with airbnb rules
 
-1. `sudo npm install -g prettier`
-1. `sudo npm install -g eslint`
+1. `npm install --save-dev prettier`
+1. `npm install --save-dev eslint`
 1. install Prettier and ESLint as VS Code extension
 1. `npm init -y` in local project
 1. make a prettier config file `touch .prettierrc`
@@ -310,5 +310,4 @@ nb:
    }
    ```
 
-1. might need to `npm install --save-dev prettier` for eslint to work with it
 1. running `npx eslint --init` also an option to setup eslint
