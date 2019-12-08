@@ -109,3 +109,10 @@ Don't work on the **Master** branch! Work on a **Develop** branch
 - Push local changes to the origin  
    `git push`  
    use `git push -u` to capture the remote branch you intend to track
+
+## Delete a file
+
+- To delete a file  
+   `git rm file1.txt`
+- To delete the file only from the Git repository and not remove it from the filesystem  
+   `git rm --cached file1.txt`
