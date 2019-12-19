@@ -116,3 +116,7 @@ Don't work on the **Master** branch! Work on a **Develop** branch
    `git rm file1.txt`
 - To delete the file only from the Git repository and not remove it from the filesystem  
    `git rm --cached file1.txt`
+
+## Pushing a sub folder to heroku
+
+- `git subtree push --prefix name-of-folder heroku master`
