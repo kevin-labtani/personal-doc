@@ -230,7 +230,7 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-## PHP
+## XAMPP (PHP, Apache & MySQL)
 
 1. download [XAMPP](https://www.apachefriends.org/index.html)
 1. `sudo apt install net-tools`
@@ -311,3 +311,11 @@ nb:
    ```
 
 1. running `npx eslint --init` also an option to setup eslint
+
+## Install and run MongoDB
+
+1. follow install [instructions](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+1. start MongoDB with `sudo service mongod start`
+1. verify that MongoDB has started with with `sudo service mongod status`
+1. stop MongoDB with `sudo service mongod stop`
+1. restart MongoDB with `sudo service mongod restart`
