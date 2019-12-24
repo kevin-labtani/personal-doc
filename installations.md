@@ -320,3 +320,10 @@ nb:
 1. stop MongoDB with `sudo service mongod stop`
 1. restart MongoDB with `sudo service mongod restart`
 1. install `robo3t` gui following [instructions](https://askubuntu.com/questions/739297/how-to-install-robomongo-on-ubuntu/781793), then run it with `robo3t`
+
+## Deploy to Heroku 101
+1. `heroku login`
+1. `heroku create name-of-app` nb: setup heroku remote
+1. to add key-value env variable `heroku config:set key=value`
+1. `git push heroku master`
+1. to push a subfolder: `git subtree push --prefix name-of-folder heroku master`
