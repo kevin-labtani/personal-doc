@@ -1,4 +1,4 @@
-# Install Your Development Environment (and Learn Basic Commands)
+# Install Your Development Environment
 
 ## Operating System ([source](https://www.theodinproject.com/courses/web-development-101/lessons/prerequisites))
 
@@ -49,6 +49,13 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 1. Autosave `"files.autoSave": "afterDelay"`
 1. Enable font ligatures `"editor.fontLigatures": true`
 1. (optional) Change tab size to 2 spaces
+1. emmet config:
+   ```json
+     "emmet.includeLanguages": {
+       "javascript": "javascriptreact",
+       "php": "html"
+     }
+   ```
 1. Install **Solarized Color Theme** extension
 1. Install **Material Theme** and **Material Icon Theme**
 1. Install **Live Server extension**  
@@ -71,6 +78,7 @@ Install VS Code from the .deb on [the site](https://code.visualstudio.com/)
 1. Install **Babel es6/es7** extension for JS
 1. Install **CSS Peek** extension, use F12 to go to css rule when on the html doc
 1. Install **Polacode** extension for code screenshots
+1. Install **ES7 React/Redux/GraphQL/React-Native snippets** for react snippets
 
 ### Basic commands
 
@@ -322,6 +330,7 @@ nb:
 1. install `robo3t` gui following [instructions](https://askubuntu.com/questions/739297/how-to-install-robomongo-on-ubuntu/781793), then run it with `robo3t`
 
 ## Deploy to Heroku 101
+
 1. `heroku login`
 1. `heroku create name-of-app` nb: setup heroku remote
 1. to add key-value env variable `heroku config:set key=value`
