@@ -233,6 +233,16 @@ sudo fc-cache -vf /usr/share/fonts/
 
 ## Update Nodejs to v10.x
 
+install an use `n` to update the node.js shipped with ubuntu
+
+```
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
+
+or use the following and run as `nodejs`
+
 ```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
