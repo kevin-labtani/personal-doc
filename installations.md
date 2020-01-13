@@ -276,7 +276,8 @@ nb:
   You’ll see apache2 and there is 3–4 digit numbers before it, so do
   `sudo kill [number]`
 
-- run `sudo chown -R $USER:$USER .` in folders inside htdocs if we get permissions issues
+- run `sudo chown -R $USER:$USER .` in folders inside htdocs if we get permissions issues  
+` sudo chmod 777 -R /opt/lampp/htdocs` will make the file readable, writable and executable by everyone 
 
 ## Prettier and ESLint with airbnb rules
 
