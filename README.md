@@ -15,6 +15,7 @@ Projet créé le 15 Septembre 2019 par [**Kevin Labtani**](https://github.com/ke
 1. [Guide Sass](/sass.md)
 1. [Guide Basic Webpack & Babel](/webpack-babel.md)
 1. [Guide Full Webpack](/webpack-full.md)
+1. [My VSCode settings](/vs-code-settings.md)
 
 ## Contributeur
 
