@@ -27,6 +27,14 @@
 
 - Add a smooth scrolling effect to the document with `html {scroll-behavior: smooth;}`
 
+- to tells the browser to account for any border and padding in the values you specify for an element's width and height. (content-box is default)
+
+  ```css
+  * {
+  box-sizing: border-box;
+  }
+  ```
+
 ## Fonts
 
 ```css
