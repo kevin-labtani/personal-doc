@@ -248,6 +248,25 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
+## Install nvm and node
+
+as an alternative to previous point
+
+1. `cd ~/` from anywhere then `git clone https://github.com/nvm-sh/nvm.git`
+
+2. `cd ~/.nvm` and check out the latest version with `git checkout v0.36.0`
+3. activate nvm by sourcing it from your shell: `. nvm.sh`
+
+edit `~./zshrc`, adding the following snippet to the end:
+
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+
+then install the latest lts version of node with `nvm install --lts`
+
 ## XAMPP (PHP, Apache & MySQL)
 
 1. download [XAMPP](https://www.apachefriends.org/index.html)
@@ -277,7 +296,7 @@ nb:
   `sudo kill [number]`
 
 - run `sudo chown -R $USER:$USER .` in folders inside htdocs if we get permissions issues  
-` sudo chmod 777 -R /opt/lampp/htdocs` will make the file readable, writable and executable by everyone 
+  ` sudo chmod 777 -R /opt/lampp/htdocs` will make the file readable, writable and executable by everyone
 
 ## Prettier and ESLint with airbnb rules
 

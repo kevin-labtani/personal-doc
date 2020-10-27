@@ -132,3 +132,88 @@
   "editor.multiCursorModifier": "ctrlCmd"
 }
 ```
+
+27 OCT 2020
+added php to WSL2
+
+```json
+{
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+  "terminal.integrated.fontFamily": "Fira Code, Menlo for Powerline",
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "workbench.colorTheme": "Community Material Theme Palenight",
+  "workbench.editor.highlightModifiedTabs": true,
+  "files.autoSave": "afterDelay",
+  "editor.fontLigatures": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "php": "html"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.wordWrap": "on",
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
+  "editor.tabCompletion": "on",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.confirmDragAndDrop": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer",
+    "editor.tabSize": 4
+  },
+  "php.suggest.basic": false,
+  "php-cs-fixer.rules": "@PhpCsFixer",
+  "php-cs-fixer.formatHtml": true,
+  "editor.minimap.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "breadcrumbs.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "html.format.wrapLineLength": 80,
+  "eslint.alwaysShowStatus": true,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/log/**": true,
+    "**/logs/**": true,
+    "**/.fdk/**": true
+  },
+  "search.exclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/log/**": true,
+    "package-lock.json": true,
+    "yarn.lock": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "editor.semanticHighlighting.enabled": false,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1603282777942
+}
+```
