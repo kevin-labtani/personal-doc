@@ -120,3 +120,7 @@ Don't work on the **Master** branch! Work on a **Develop** branch
 ## Pushing a sub folder to heroku
 
 - `git subtree push --prefix name-of-folder heroku master`
+
+## Amending a Commit Without Changing Its Message
+
+do a git add then, `git commit --amend --no-edit`
